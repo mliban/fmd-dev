@@ -1,0 +1,341 @@
+/** Facilities Management - Virginia Commonwealth University **/
+
+/** GENERAL STYLES **/
+  body{
+
+  }
+  * {
+    border-radius: 0 !important;
+  }
+
+/** FONTS + COLORS **/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:0;
+    font-weight: 700;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p{
+    padding-bottom:8px;
+  }
+  h1{
+    font-size:500%;
+  }
+  header h1 a{
+    color:#333;
+  }
+  .container h1{
+    font-size:400%;
+    font-weight: bold;
+    color:#333;
+  }
+  h2{
+    font-size:400%;
+  }
+  h3{
+    font-size:350%;
+  }
+  h4{
+    font-size:275%;
+  }
+  #qLinksAnnounce h4{
+    color:#d65b00;
+    text-transform: uppercase;
+  }
+  h5{
+    font-size:165%;
+  }
+  h6{
+    font-size:125%;
+  }
+  p{
+    font-size:100%;
+    font-family: 'Cabin', sans-serif;
+    line-height:1.7em;
+    color:#333;
+  }
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .utility{
+    font-weight:bold;
+    font-size:80%;
+  }
+  a{
+    color:#417b09;
+  }
+  a:hover{
+    color:#333;
+  }
+
+  nav a{
+    color:#000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:110%;
+    margin-right:10px;
+    padding-right:10px;
+  }
+  nav a:hover{
+    color:#fff;
+  }
+
+
+/* ACCESSIBILITY */
+
+  a:focus{
+    border:#000 1px solid;
+  }
+  a.skip-links-item {
+   font-size: 14px;
+   text-decoration: underline;
+   position: absolute;
+   left: 15px;
+   top: -100px;
+   z-index: 10000;
+   height: auto;
+   margin: 0 auto;
+   padding: 10px 15px;
+   background-color: transparent;
+   color: #ffba00;
+   outline: none;
+   transition: top .2s,background-color .2s;
+  }
+
+  a.skip-links-item:active,
+  a.skip-links-item:focus {
+   top: 0;
+   background-color: #272727;
+  }
+
+  #skip-links {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   margin-left: 0;
+   list-style: outside none;
+  }
+
+
+/** HEADER **/
+  header{
+    padding:16px 0 8px 0;
+  }
+  .search{
+    width:100%;
+    display:inline-block;
+  }
+  .search-it{
+    float:right;
+    width:100%;
+    overflow:hidden;
+    text-align:right;
+  }
+  .search .sb-search-submit{
+    font-weight: bold;
+    font-size:80%;
+  }
+  .sb-search-input{
+    width:75%;
+    border:none;
+    background:#efefef;
+    padding:7px 8px 8px 8px;
+  }
+  .sb-search-submit,
+  .sb-search-input{
+    margin:0;
+  }
+
+  .btn-success{
+    background:#417b09;
+  }
+
+  /** UTILITY **/
+    .utility{
+      float:right;
+      margin:8px 0 8px 0;
+    }
+    .utility li{
+      list-style-type:none;
+      float:left;
+    }
+    .utility li:after{
+      content:'  |  ';
+      white-space: pre;
+    }
+    .utility li:last-of-type:after{
+      content: '';
+    }
+
+/** MAIN NAV **/
+  nav{
+    background:#ffb800;
+    padding:16px 0;
+  }
+  nav a{
+
+  }
+  nav a:last-of-type{
+    margin-right:0;
+    padding-right:0;
+  }
+  .navbar{
+    display:none;
+  }
+
+
+/** SLIDERQUICKSECTION **/
+  .quikFM{
+    background:#efefef;
+    height:100%;
+    min-height:300px;
+  }
+
+
+/** SLIDERQUICKSECTION **/
+  #qLinksAnnounce ul{
+    list-style-type:none;
+    margin-bottom:8px;
+  }
+  #qLinksAnnounce li{
+    margin-bottom:8px;
+  }
+
+
+/** PROJECTSUNDERWAY **/
+  #projectsUnderway{
+    background:#f0ebe2;
+    border-top:#ffb800 10px solid;
+  }
+  #projectsUnderway h4{
+    text-align:center;
+    text-transform: uppercase;
+  }
+
+
+/** FOOTER **/
+  footer{
+    background:#000;
+    padding:16px 0;
+  }
+  footer p{
+    color:#ccc;
+  }
+  footer a{
+    color:#ffb800;
+    font-weight:bold;
+  }
+  footer a:hover{
+    color:#ccc;
+  }
+  .sustainability{
+    width:25%;
+    height:auto;
+  }
+  .footerRqmts{
+    text-align:right;
+  }
+
+
+/** ALIGNMENT + OTHER STYLES **/
+
+
+
+
+
+
+
+
+
+/** MEDIA QUERIES **/
+/* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px) {
+
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 1024px) {
+    .utility li:after{
+      content:'';
+      white-space: pre;
+    }
+
+    .utility li{
+      float:right;
+      text-align: right;
+      display: block;
+      width:100%;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    .search .sb-search-submit{
+      padding:7px 12px;
+      width:35%;
+      font-size:70%;
+    }
+    .sb-search-input{
+      width:65%;
+
+    }
+    .nav{
+      display:none;
+    }
+    .navbar{
+      display:inherit;
+    }
+    .navbar .collapse li{
+      list-style-type:none;
+      margin-bottom:8px;
+    }
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+    .container h1{
+      font-size: 300%;
+    }
+    header{
+      text-align:center;
+    }
+    .sb-search-input{
+      bottom:0;
+      float:none;
+    }
+    .utility{
+      margin-bottom:16px;
+    }
+    .utility,
+    .utility li{
+      float:none;
+      text-align: center;
+    }
+    .sb-search-submit{
+      left:0;
+    }
+    .search{
+      margin-bottom:24px;
+    }
+    .footerRqmts{
+      text-align:center;
+    }
+  }
+
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width : 320px) {
+
+  }
