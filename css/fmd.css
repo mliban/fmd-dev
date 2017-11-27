@@ -1,8 +1,9 @@
 /** Facilities Management - Virginia Commonwealth University **/
 
 /** GENERAL STYLES **/
+  html,
   body{
-
+    height:100%;
   }
   * {
     border-radius: 0 !important;
@@ -226,8 +227,76 @@
   }
 
 
+/** SECOND LEVEL PAGES **/
+  .secondFmdRow{
+    height: 100%;
+  }
+  /*.secondFmdContainer{
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }*/
+  .subHero{
+    margin-bottom:8px;
+  }
+  .fmdSecondNav{
+    background:#f0ebe2
+  }
+  .fmdSecondNav h5{
+    border-bottom:#333 3px solid;
+    margin-bottom:8px;
+    text-transform: uppercase;
+  }
+  .fmdSecondNav ul{
+    list-style-type:none;
+    margin:16px 0 0 0;
+    padding:0;
+  }
+  .fmdSecondNav li{
+    border-bottom:#fff 1px solid;
+    margin-bottom:12px;
+    padding-bottom:16px;
+    font-weight:bold;
+  }
+  .fmdSecondNav li:last-of-type{
+    border-bottom:none;
+    margin-bottom:0;
+    padding-bottom:0;
+  }
+
+  .fmdSecondNav,
+  .fmdSecondContent{
+    padding:30px 30px 0 30px;
+  }
+  .fmdSecondContent{
+    height:auto;
+  }
+  .fmdSecondContent small{
+    text-transform:uppercase;
+    color:#999;
+    font-weight: bold;
+  }
+  .fmdSecondContent h2{
+    color:#d65b00;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+
+
+/** LOWER LEVEL STYLES **/
+  .fmdSecondNav li li{
+    border-bottom:none;
+    margin-bottom:0;
+    font-weight: lighter;
+    font-size:80%;
+    margin-left:16px;
+  }
+
+
+
 /** FOOTER **/
   footer{
+    width:100%;
     background:#000;
     padding:16px 0;
   }
@@ -280,6 +349,12 @@
       width:100%;
     }
   }
+  @media only screen and (max-width : 992px) {
+    .no-float {
+      display: table-cell;
+      float: none;
+    }
+  }
 
   /* Small Devices, Tablets */
   @media only screen and (max-width : 768px) {
@@ -309,6 +384,9 @@
     .container h1{
       font-size: 300%;
     }
+    .fmdSecondContent h2{
+      font-size:290%;
+    }
     header{
       text-align:center;
     }
@@ -329,6 +407,28 @@
     }
     .search{
       margin-bottom:24px;
+    }
+    .fmdSecondNav li:last-of-type{
+      border-bottom:none;
+      margin-bottom:8px;
+      padding-bottom:8px;
+    }
+    .fmdSecondNav{
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 2;
+      -webkit-order: 2;
+      order: 2;
+    }
+    .fmdSecondContent{
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+    }
+    footer p{
+      text-align:center;
     }
     .footerRqmts{
       text-align:center;
