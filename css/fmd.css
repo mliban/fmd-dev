@@ -74,7 +74,7 @@
     font-size:80%;
   }
   a{
-    color:#417b09;
+    color:#387100;
   }
   a:hover{
     color:#333;
@@ -263,7 +263,6 @@
     margin-bottom:0;
     padding-bottom:0;
   }
-
   .fmdSecondNav,
   .fmdSecondContent{
     padding:30px 30px 0 30px;
@@ -273,7 +272,7 @@
   }
   .fmdSecondContent small{
     text-transform:uppercase;
-    color:#999;
+    color:#666;
     font-weight: bold;
   }
   .fmdSecondContent h2{
