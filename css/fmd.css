@@ -60,9 +60,9 @@
     font-size:125%;
   }
   p{
-    font-size:100%;
-    font-family: 'Cabin', sans-serif;
-    line-height:1.7em;
+    font-size:110%;
+    font-family: 'Lato', sans-serif;
+    line-height:1.8em;
     color:#333;
   }
   ul{
@@ -91,6 +91,9 @@
   }
   nav a:hover{
     color:#fff;
+  }
+  strong{
+    font-weight:
   }
 
 
@@ -272,8 +275,14 @@
   }
   .fmdSecondContent small{
     text-transform:uppercase;
-    color:#666;
+    color:#466f1e;
     font-weight: bold;
+  }
+  .fmdSecondContent small a{
+    text-decoration: underline;
+  }
+  .fmdSecondContent small a:hover{
+    color:blue;
   }
   .fmdSecondContent h2{
     color:#d65b00;
@@ -290,7 +299,9 @@
     font-size:80%;
     margin-left:16px;
   }
-
+  .fmd-staff{
+    margin-bottom:16px;
+  }
 
 
 /** FOOTER **/
