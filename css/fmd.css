@@ -25,8 +25,7 @@
   h3,
   h4,
   h5,
-  h6,
-  p{
+  h6{
     padding-bottom:8px;
   }
   h1{
@@ -163,8 +162,13 @@
     margin:0;
   }
 
-  .btn-success{
-    background:#417b09;
+  .sb-search-submit{
+    background:#333;
+    border:none;
+  }
+  .sb-search-submit:hover{
+    background:#ffb800;
+    color:#000;
   }
 
   /** UTILITY **/
@@ -172,16 +176,24 @@
       float:right;
       margin:8px 0 8px 0;
     }
+    .btnHp{
+      background:#4f7925;
+    }
     .utility li{
       list-style-type:none;
       float:left;
+      padding-top:8px;
+
     }
-    .utility li:after{
-      content:'  |  ';
-      white-space: pre;
+    .utility li:last-of-type a{
+      color:#fff;
     }
-    .utility li:last-of-type:after{
-      content: '';
+    .utility li a:hover{
+      color:#ccc;
+    }
+    .requestIt{
+      background:#4f7925;
+      padding:8px 16px;
     }
 
 /** MAIN NAV **/
@@ -190,7 +202,7 @@
     padding:16px 0;
   }
   nav a{
-
+    font-size:100%;
   }
   nav a:last-of-type{
     margin-right:0;
@@ -302,6 +314,10 @@
   .fmd-staff{
     margin-bottom:16px;
   }
+
+
+/** SERVICE GUIDE **/
+
 
 
 /** FOOTER **/
